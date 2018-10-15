@@ -1,0 +1,16 @@
+.discussion-this-week .title {
+    font-size: 2rem;
+    float: left;
+}
+
+.header-buttons {
+    text-align: right;
+}
+
+.discussion-this-week .header-buttons .btn {
+    margin-left: 1em;
+}
+
+.grey.lighten-4 {
+    color: #999999;
+}
