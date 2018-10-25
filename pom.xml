@@ -12,6 +12,7 @@
 	<modules>
 		<module>core</module>
 		<module>web-rest</module>
+		<module>web-ui-react</module>
 	</modules>
 
 	<properties>

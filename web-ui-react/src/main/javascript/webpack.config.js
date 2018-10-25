@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require("path");
 
 module.exports = {
   entry: './src/app/index.jsx',
@@ -18,14 +19,15 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/app/dist',
-    publicPath: '/app/',
+    path: path.join(__dirname, '..', 'webapp/static'),
+    publicPath: '/static/',
     filename: 'bundle.js'
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: './dist',
+    contentBase: '../webapp',
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    port:8000
   }
 };
